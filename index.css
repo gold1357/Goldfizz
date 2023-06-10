@@ -241,7 +241,7 @@ body {
   /* transform: perspective(1000px); */
   overflow: hidden;
   margin: 0 auto;
-  background: url("/pics/index-pics/Layer-4.png");
+  background: url("pics/index-pics/Layer-4.png");
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
