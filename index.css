@@ -241,7 +241,7 @@ body {
   /* transform: perspective(1000px); */
   overflow: hidden;
   margin: 0 auto;
-  background: url("pics/index-pics/Layer-4.png");
+  background: url("/pics/index-pics/Layer-4.png");
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -377,6 +377,7 @@ body {
   margin-top: 5rem;
   background-color: #00010f;
   margin-bottom: 15%;
+  overflow: hidden;
 }
 .about-heading {
   display: flex;
@@ -465,7 +466,7 @@ body {
   color: rgb(233, 137, 41);
   font-size: 2rem;
   line-height: 1.8rem;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .about_btn {
@@ -623,7 +624,7 @@ body {
   }
   .about-us-left {
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   .about-us-left h1 {
     font-size: 2.5rem;
@@ -664,7 +665,7 @@ body {
   .design {
     font-size: 8rem;
   }
-  .abt-img{
+  .abt-img {
     width: 500px;
     height: 500px;
   }
@@ -789,21 +790,34 @@ body {
 
 @media screen and (max-width: 400px) {
   .banner h1 {
-    font-size: 90px;
+    font-size: 75px;
   }
   .banner p {
-    font-size: 20px;
+    font-size: 14px;
+  }
+  .banner button{
+    font-size: 1.3rem;
+    width: 70%;
+    height: 4rem;
   }
   .abt-img {
-    width: 330px;
-    height: 330px;
+    width: 290px;
+    height: 290px;
+    border: 1.3px solid goldenrod;
   }
   .fa-layer-group,
   .fa-users {
-    font-size: 9rem;
+    font-size: 8rem;
+  }
+  .about-us-left h1 {
+    font-size: 1.5rem;
+  }
+
+  .about-us-left h2 {
+    font-size: 1.7rem;
   }
   .design {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   .about_btn {
     background: linear-gradient(to right, #d76a0a, #098edb);
@@ -823,6 +837,8 @@ body {
   height: 100%;
   padding: 10rem 0px;
   color: #ffffff;
+  margin-top: 8rem;
+  overflow: hidden;
 }
 
 .service h1 {
@@ -940,8 +956,14 @@ body {
   .service-wrapper {
     grid-template-columns: 1fr;
   }
-  .service h1{
+  .service h1 {
     font-size: 3.8rem;
+    margin-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .service h1 {
+    font-size: 3rem;
   }
 }
 
@@ -954,6 +976,7 @@ body {
   flex-direction: column;
   justify-content: center;
   padding: 30px 35px;
+  overflow: hidden;
 }
 .contact-wrapper {
   display: flex;
@@ -1006,6 +1029,24 @@ body {
     transition: all 0.7s;
   }
 }
+@media screen and (max-width: 400px) {
+  .contact-wrapper p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .contact-span {
+    font-size: 1.6rem;
+    transition: all 0.7s;
+  }
+  .contact-span_2 {
+    font-size: 1.7rem;
+    transition: all 0.7s;
+  }
+  .contact-btn {
+    padding: 18px 25px;
+    font-size: 1.2rem;
+  }
+}
 
 /* FEATURES SECTION */
 .sign_up {
@@ -1014,6 +1055,7 @@ body {
   margin-top: 5rem;
   background-color: #00010f;
   margin-bottom: 15%;
+  overflow: hidden;
 }
 .sign-up-heading {
   display: flex;
@@ -1043,8 +1085,6 @@ body {
   justify-content: space-between;
 }
 .sign-up-right {
-  /* width: 55%; */
-  /* background-color: #cf7200; */
   margin: 5rem 5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
@@ -1110,7 +1150,7 @@ body {
   text-align: center;
 }
 .sign-up-img {
-  margin: 10px;
+  /* margin: 10px; */
   height: 500px;
   width: 500px;
   border-radius: 9px;
@@ -1119,12 +1159,8 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-left: 3rem;
-  /* background: linear-gradient(to right, #000046, #1cb5e0); */
-  background: linear-gradient(to right, #ba2657, #d96823e4) ;
-  background: -webkit-linear-gradient(to right,
-  #a6ffcb,
-  #12d8fa,
-  #1fa2ff);
+  background: linear-gradient(to right, #ba2657, #d96823e4);
+  background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
 }
 .sign-up-img i {
   font-size: 14rem;
@@ -1194,15 +1230,18 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-  .sign-up-img{
+  .sign-up-img {
     width: 480px;
     height: 480px;
   }
-   .sign-up-right h1 {
-    font-size: 2.7rem;
+  .sign-up-right {
+    margin: 0px 0px;
   }
- .sign-up-right h2 {
-    font-size: 3.5rem;
+  .sign-up-right h1 {
+    font-size: 2.9rem;
+  }
+  .sign-up-right h2 {
+    font-size: 3.9rem;
   }
 }
 
@@ -1224,30 +1263,35 @@ body {
     width: 380px;
     height: 380px;
   }
- .sign-up-right h1 {
+  .sign-up-img i {
+    font-size: 9rem;
+  }
+  .sign-up-right h1 {
     font-size: 2rem;
   }
- .sign-up-right h2 {
+  .sign-up-right h2 {
     font-size: 2.8rem;
   }
-  .sign_btn{
+  .sign_btn {
     padding: 18px 30px;
   }
 }
 @media screen and (max-width: 550px) {
-   .sign-up-right h1 {
+  .sign-up-right h1 {
     font-size: 2.3rem;
   }
- .sign-up-right h2 {
+  .sign-up-right h2 {
     font-size: 3.2rem;
   }
 }
 
 @media screen and (max-width: 480px) {
-
   .sign-up-img {
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
+  }
+  .sign-up-img i {
+    font-size: 8rem;
   }
   .sign-up-right h1 {
     font-size: 1.7rem;
@@ -1269,14 +1313,26 @@ body {
 }
 
 @media screen and (max-width: 400px) {
+  .sign-up-right h1 {
+    font-size: 1.2rem;
+  }
+  .sign-up-right h2 {
+    font-size: 2rem;
+    margin: 20px 0px;
+  }
+  .sign-up-right p {
+    font-size: 1.4rem;
+    letter-spacing: 0px;
+  }
   .sign-up-img {
-    width: 300px;
-    height: 300px;
+    width: 290px;
+    height: 290px;
   }
   .sign_btn {
     background: linear-gradient(to right, #d76a0a, #098edb);
     font-size: 1.2rem;
     color: #ffffff;
+    margin-bottom: 0px;
     padding: 20px 40px;
   }
 }
