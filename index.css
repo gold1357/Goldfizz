@@ -241,7 +241,7 @@ body {
   /* transform: perspective(1000px); */
   overflow: hidden;
   margin: 0 auto;
-  background: url("/pics/index-pics/Layer-4.png");
+  background: url("pics/index-pics/Layer-4.png");
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
@@ -420,7 +420,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url("/pics/About-us/Layer7.png");
+  background: url("pics/About-us/Layer7.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -521,7 +521,7 @@ body {
   }
   .header {
     height: 50rem;
-    background: url("/pics/index-pics/bg5.jpg");
+    background: url("pics/index-pics/bg5.jpg");
     background-size: 80%;
     background-position: 50% 1%;
     background-repeat: no-repeat;
@@ -795,7 +795,7 @@ body {
   .banner p {
     font-size: 14px;
   }
-  .banner button{
+  .banner button {
     font-size: 1.3rem;
     width: 70%;
     height: 4rem;
